@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Katie Ayers</title>
+    <title>KMA Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Katie's Page</h1>
+    <div id="navbar">
+        <a onclick="initScroll('contact'); return false;" href="#">Contact</a>
+        <a onclick="initScroll('work'); return false;" href="#">Work</a>
+        <a onclick="initScroll('about'); return false;" href="#">About</a>
+        <a onclick="initScroll('intro'); return false;" href="#">Introduction</a>
+    </div>
+
+    <div id="intro">Introduction</div> 
+    
+    <div id="about">About</div> 
+    
+    <div id="work">Work</div> 
+    
+    <div id="contact">Contact</div> 
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <a href="http://www.freepik.com">Background Designed by Bewalrus / Freepik</a>
+    <script src="./script.js"></script>
 </body>
 </html>
