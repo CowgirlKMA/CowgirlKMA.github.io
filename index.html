@@ -8,23 +8,31 @@
 </head>
 <body>
     <div id="navbar">
-        <a onclick="initScroll('contact'); return false;" href="#">Contact</a>
-        <a onclick="initScroll('work'); return false;" href="#">Work</a>
-        <a onclick="initScroll('about'); return false;" href="#">About</a>
-        <a onclick="initScroll('intro'); return false;" href="#">Introduction</a>
+        <ul>
+            <li><a onclick="initScroll('contact'); return false;" href="#">CONTACT</a></li>
+            <li><a onclick="initScroll('work'); return false;" href="#">MY WORK</a></li>
+            <li><a onclick="initScroll('about'); return false;" href="#">ABOUT ME</a></li>
+            <li><a onclick="initScroll('home'); return false;" href="#">HOME</a></li>
+        </ul>
     </div>
+    <div class="">
+        <div id="home">
+            <p>Hello, I'm <span class="highlight">Katherine Ayers</span>.</p>
+            <br/>
+            <p>I'm a full-stack web developer.</p>
+        </div> 
 
-    <div id="intro">Introduction</div> 
-    
-    <div id="about">About</div> 
-    
-    <div id="work">Work</div> 
-    
-    <div id="contact">Contact</div> 
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-    <a href="http://www.freepik.com">Background Designed by Bewalrus / Freepik</a>
+        <div id="about">ABOUT ME</div> 
+        
+        <div id="work">MY WORK</div> 
+        
+        <div id="contact">CONTACT</div> 
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">HOME</button>
+    <div class="footer">
+        <p>KATHERINE AYERS &copy;2024</p>
+        <a href="http://www.freepik.com">Background Designed by Bewalrus / Freepik</a>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
