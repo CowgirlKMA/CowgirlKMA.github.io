@@ -20,6 +20,15 @@ function initScroll(elementId){
     window.scroll(0, marginY);
 }
 
+/* Toggle between adding and removing the "responsive" class to navbar when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("navbar")
+    if (x.className === "navbar") {
+            x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
 
 // this function is for the scroll to top button 
 let mybutton = document.getElementById("myBtn");
