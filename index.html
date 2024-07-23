@@ -8,44 +8,44 @@
 </head>
 <body>
     <div id="home">
+        <div id="navbar">
+            <ul>
+                <li><a onclick="initScroll('about'); return false;" href="#">ABOUT ME</a></li>
+                <li><a onclick="initScroll('work'); return false;" href="#">MY WORK</a></li>
+                <li><a onclick="initScroll('contact'); return false;" href="#">CONTACT</a></li>
+            </ul>
+        </div>
         <div class="intro">
             <p>Hello, I'm <span class="highlight">Katherine Ayers</span>.</p>
             <p>I'm a full-stack web developer.</p>
         </div>
         <div class="workBtn">
             <a onclick="initScroll('work'); return false;" href="#">View my work</a>
-            <div id="navbar">
-                <ul>
-                    <li><a onclick="initScroll('about'); return false;" href="#">ABOUT ME</a></li>
-                    <li><a onclick="initScroll('work'); return false;" href="#">MY WORK</a></li>
-                    <li><a onclick="initScroll('contact'); return false;" href="#">CONTACT</a></li>
-                </ul>
-            </div>
         </div>
     </div> 
     <div class="content">
         <div id="about">ABOUT ME</div> 
         
         <div id="work">MY WORK
-            <a href="../externals/PortfolioPageAssignment/index.html">
+            <!-- <a href="../externals/PortfolioPageAssignment/index.html">
                 <div class="projectContainer">
                     <div class="projectTitle">
                         <h3>Portfolio Page</h3>
                     </div>
                     <div class="projectSummary">
-                        <p>HTML, CSS, Javascript</p>
+                        <p>HTML & CSS</p> 
                     </div>
                 </div>
-            </a>
+            </a> -->
         </div> 
 
         
         <div id="contact">CONTACT</div> 
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="footer">
+        <p><a href="#top">BACK TO TOP</a></p>
         <p>Katherine Ayers &copy;2024</p>
-        <a href="http://www.freepik.com">Background Designed by Bewalrus / Freepik</a>
+        <p><a href="http://www.freepik.com">Background Designed by Bewalrus / Freepik</a></p>
     </div>
     <script src="./script.js"></script>
 </body>

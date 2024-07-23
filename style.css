@@ -14,7 +14,7 @@ body{
 
 /* Navbar styling */
 #navbar {
-    overflow: hidden;
+    width: 100%;
     background-color: #003B73;
 }
 
@@ -29,22 +29,24 @@ body{
 } 
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
-/* Page content */
-.content {
-    padding: 16px;
+
+/* Psuedo selector for when it's not sticky */
+#navbar:not(.sticky){
+    position: absolute;
+    bottom: 0;
 }
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-    padding-top: 60px;
+
+/* Page content */
+.content {
+    padding: 16px;
 }
 
 /* Text styling */
@@ -72,46 +74,39 @@ color: rgb(222, 24, 24);
 /* About section */
 #about{
     height: 100vh; padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* My work section */
 #work{
     height: 100vh; padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* Contact section  */
 #contact{
     height: 100vh; padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-/* scroll to top button */
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 0px; /* Place the button at the bottom of the page */
-    right: 0px; /* Place the button TO the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #0074B7; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-}
-#myBtn:hover {
-    background-color:#60A3D9; /* Add a color background on hover */
-}
 
 
 /* footer  */
 .footer {
+    padding: 3px;
     bottom: auto;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color:#003B73;
-    color:  rgb(222, 24, 24);
-    text-align:center;
+    color: #f2f2f2;    
+    font-size: xx-small;
+}
+a{
+    color: #f2f2f2;
+    text-decoration: none;
 }
