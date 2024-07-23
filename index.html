@@ -7,37 +7,44 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="navbar">
-        <ul>
-            <li><a onclick="initScroll('contact'); return false;" href="#">CONTACT</a></li>
-            <li><a onclick="initScroll('work'); return false;" href="#">MY WORK</a></li>
-            <li><a onclick="initScroll('about'); return false;" href="#">ABOUT ME</a></li>
-            <!-- <li><a onclick="initScroll('home'); return false;" href="#">HOME</a></li> -->
-
-        </ul>
-
-    </div>
+    <div id="home">
+        <div class="intro">
+            <p>Hello, I'm <span class="highlight">Katherine Ayers</span>.</p>
+            <p>I'm a full-stack web developer.</p>
+        </div>
+        <div class="workBtn">
+            <a onclick="initScroll('work'); return false;" href="#">View my work</a>
+            <div id="navbar">
+                <ul>
+                    <li><a onclick="initScroll('about'); return false;" href="#">ABOUT ME</a></li>
+                    <li><a onclick="initScroll('work'); return false;" href="#">MY WORK</a></li>
+                    <li><a onclick="initScroll('contact'); return false;" href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
     <div class="content">
-        <div id="home">
-            <div class="intro">
-                <p>Hello, I'm <span class="highlight">Katherine Ayers</span>.</p>
-                <p>I'm a full-stack web developer.</p>
-            </div>
-            <div class="workBtn">
-                <a onclick="initScroll('work'); return false;" href="#">View my work</a>
-            </div>
-        </div> 
-
-
         <div id="about">ABOUT ME</div> 
         
-        <div id="work">MY WORK</div> 
+        <div id="work">MY WORK
+            <a href="../externals/PortfolioPageAssignment/index.html">
+                <div class="projectContainer">
+                    <div class="projectTitle">
+                        <h3>Portfolio Page</h3>
+                    </div>
+                    <div class="projectSummary">
+                        <p>HTML, CSS, Javascript</p>
+                    </div>
+                </div>
+            </a>
+        </div> 
+
         
         <div id="contact">CONTACT</div> 
     </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="footer">
-        <p<span class="highlight">Katherine Ayers</span> &copy;2024</p>
+        <p>Katherine Ayers &copy;2024</p>
         <a href="http://www.freepik.com">Background Designed by Bewalrus / Freepik</a>
     </div>
     <script src="./script.js"></script>

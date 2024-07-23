@@ -16,72 +16,76 @@ body{
 #navbar {
     overflow: hidden;
     background-color: #003B73;
-    }
+}
 
 /* Navbar links styling*/
 #navbar a {
-    float: right;
+    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px;
     text-decoration: none;
-    } 
+} 
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-/* Change the color of links on hover */
-.navbar a:hover {
-    background-color:#0074B7;
-    color: black;
-    } 
-    
-/* Add an active class to highlight the current page */
-.navbar a.active {
-    background-color: #04AA6D;
-    color: white;
-    }
-/* Hide the link that should open and close the topnav on small screens */
-.navbar .icon {
-    display: none;
-    }
-
-    /* Text styling */
-.highlight{
-    color: rgb(222, 24, 24);
+/* Page content */
+.content {
+    padding: 16px;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
 }
 
-/* Sections */
-    #home{
-        height: 100vh; padding-top: 150px;
-    }
-    /* Intro section */
-    .intro{
-        text-align: center;
-        font-weight: bolder;
-        font-size: 40px;
-    }
-    .workBtn{
-        text-align: center;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 20px;
-        }
+/* Text styling */
+.highlight{
+color: rgb(222, 24, 24);
+}
 
-    #about{
-        height: 100vh; padding-top: 20px;
+/* Main sections */
+#home{
+    height: 100vh; padding-top: 150px;
+}
+/* Intro section */
+.intro{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.workBtn{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
     }
-    #work{
-        height: 100vh; padding-top: 20px;
-    }
-    #contact{
-        height: 100vh; padding-top: 20px;
-    }
-    
+
+/* About section */
+#about{
+    height: 100vh; padding-top: 20px;
+}
+
+/* My work section */
+#work{
+    height: 100vh; padding-top: 20px;
+}
+
+/* Contact section  */
+#contact{
+    height: 100vh; padding-top: 20px;
+}
+
+
 /* scroll to top button */
-
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -90,8 +94,7 @@ ul{
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #0074B7; /* Add a color background on hover */
-    /* Set a background color */
+    background-color: #0074B7; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 10px; /* Some padding */
@@ -103,13 +106,12 @@ ul{
 
 
 /* footer  */
-.footer {bottom: auto;
+.footer {
+    bottom: auto;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color:#003B73;
-    border-style: solid, 5px;
-    border-color:  steelblue;
-    color: white;
+    color:  rgb(222, 24, 24);
     text-align:center;
 }
