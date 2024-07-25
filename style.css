@@ -6,16 +6,18 @@
     font-family: 'CustomFont'; /* Name your font family */
     src: url('font/Raleway-Regular.ttf'); /* Locate the .ttf file within your directory*/
 }
-    
+html {
+    scroll-behavior: smooth;
+}    
 body{  
-    background-image: url('assets/16154.jpg');
     font-family: 'CustomFont', raleway-regular; /* Use the font family */
 }
 
 /* Navbar styling */
 #navbar {
     width: 100%;
-    background-color: #003B73;
+    background-color: #20202a;
+    ;
 }
 
 /* Navbar links styling*/
@@ -26,8 +28,12 @@ body{
     text-align: center;
     padding: 14px;
     text-decoration: none;
-    font-size: small;
+    font-size: 15px;
 } 
+#navbar a:hover {
+    color:  rgb(199, 31, 95);
+}
+
 ul{
     list-style-type: none;
 }
@@ -52,20 +58,24 @@ ul{
 
 /* Text styling */
 .highlight{
-color: rgb(222, 24, 24);
+color: rgb(199, 31, 95);
 }
 
+
 /* Main sections */
+/* Home Section */
 #home{
-    height: 100vh; padding-top: 150px;
-}
-/* Intro section */
-.intro{
+    height: 500px; 
+    padding-top: 175px;
+
+    .introduction{
     text-align: center;
+    color: #f2f2f2;
     font-weight: bolder;
     font-size: 40px;
 }
-.workBtn{
+
+.myWorkBtn{
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -74,40 +84,91 @@ color: rgb(222, 24, 24);
 
 /* About section */
 #about{
-    height: 100vh; padding-top: 20px;
+    height: 500px; 
+    padding-top: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+
 }
+
 
 /* My work section */
 #work{
-    height: 100vh; padding-top: 20px;
+    height: 2000px; 
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+    /* Container for projects */
+.d-flex-col {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 25px;
+    height: auto;
+    padding: 25px;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.projectTitle {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.projectSummary {
+    font-size: 15px;
+    padding-bottom:10px;
 }
 
 
 /* Contact section  */
 #contact{
-    height: 100vh; padding-top: 20px;
+    height: 300px; 
+    padding-top: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    background-color:#2c2c3d;
+    font-weight: bold;
+    font-size: 30px;
 }
-
 
 
 /* footer  */
 .footer {
     padding: 3px;
     bottom: auto;
-    background-color:#003B73;
+    background-color:#20202a;
     color: #f2f2f2;    
-    font-size: xx-small;
+    font-size: 12px;
 }
 a{
     color: #f2f2f2;
     text-decoration: none;
 }
+
+
+
