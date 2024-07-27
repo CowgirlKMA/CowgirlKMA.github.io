@@ -67,8 +67,8 @@ color: rgb(199, 31, 95);
 #home{
     height: 500px; 
     padding-top: 175px;
-
-    .introduction{
+}
+.introduction{
     text-align: center;
     color: #f2f2f2;
     font-weight: bolder;
@@ -165,10 +165,7 @@ color: rgb(199, 31, 95);
     color: #f2f2f2;    
     font-size: 12px;
 }
-a{
+a {
     color: #f2f2f2;
     text-decoration: none;
 }
-
-
-
