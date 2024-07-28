@@ -11,13 +11,13 @@ html {
 }    
 body{  
     font-family: 'CustomFont', raleway-regular; /* Use the font family */
+    background-image: url("assets/16154.jpg");
 }
 
 /* Navbar styling */
 #navbar {
     width: 100%;
     background-color: #20202a;
-    ;
 }
 
 /* Navbar links styling*/
@@ -36,6 +36,7 @@ body{
 
 ul{
     list-style-type: none;
+    border-bottom: solid 5px  #00b6bc;
 }
 
 /* Psuedo selector for when it's not sticky */
@@ -65,9 +66,11 @@ color: rgb(199, 31, 95);
 /* Main sections */
 /* Home Section */
 #home{
-    height: 500px; 
+    height: 525px; 
     padding-top: 175px;
+    background-color:#2c2c3d;
 }
+
 .introduction{
     text-align: center;
     color: #f2f2f2;
@@ -76,15 +79,25 @@ color: rgb(199, 31, 95);
 }
 
 .myWorkBtn{
+    background-color:#2c2c3d;
+    border: solid; 
+    border-color: #f2f2f2;
+    padding: 13px 32px;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
     font-size: 20px;
-    }
+}
+.myWorkBtn:hover{
+    background-color: #00b6bc;
+    color: #f2f2f2;
+}
 
 /* About section */
 #about{
-    height: 500px; 
+    height: auto; 
     padding-top: 50px;
     display: flex;
     justify-content: center;
@@ -96,10 +109,11 @@ color: rgb(199, 31, 95);
 
 /* My work section */
 #work{
-    height: 2000px; 
+    height: auto; 
     padding-top: 50px;
     display: flex;
     justify-content: center;
+
     font-weight: bold;
     font-size: 30px;
 }
@@ -129,8 +143,8 @@ color: rgb(199, 31, 95);
     border-width: 5px;
     border-radius: 25px;
     height: auto;
-    padding: 25px;
     width: auto;
+    padding: 25px;
     margin-bottom: 30px;
 }
 
@@ -143,15 +157,19 @@ color: rgb(199, 31, 95);
     font-size: 15px;
     padding-bottom:10px;
 }
-
+#myVideo {
+    width: 520px;
+    height: 440px;
+    /* border: solid, black, 3px; */
+}
 
 /* Contact section  */
 #contact{
-    height: 300px; 
+    height: auto; 
     padding-top: 50px;
     display: flex;
     justify-content: center;
-    background-color:#2c2c3d;
+    /* background-color:#2c2c3d; */
     font-weight: bold;
     font-size: 30px;
 }
