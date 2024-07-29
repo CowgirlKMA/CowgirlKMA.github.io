@@ -11,55 +11,49 @@ html {
 }    
 body{  
     font-family: 'CustomFont', raleway-regular; /* Use the font family */
-    background-image: url("assets/16154.jpg");
+    /* background-image: url("assets/16154.jpg"); */
 }
+a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+/* Text styling */
+.highlight{
+color: rgb(199, 31, 95);
 
-/* Navbar styling */
+}
+/* Navbar and navbar links styling */
 #navbar {
     width: 100%;
-    background-color: #20202a;
+    background-color:#222233;
 }
-
-/* Navbar links styling*/
 #navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px;
+    padding: 20px;
+    padding-left: 40px;
     text-decoration: none;
     font-size: 15px;
 } 
 #navbar a:hover {
     color:  rgb(199, 31, 95);
 }
-
 ul{
     list-style-type: none;
     border-bottom: solid 5px  #00b6bc;
 }
-
 /* Psuedo selector for when it's not sticky */
 #navbar:not(.sticky){
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
 }
-
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-/* Page content */
-.content {
-    padding: 16px;
-}
-
-/* Text styling */
-.highlight{
-color: rgb(199, 31, 95);
 }
 
 
@@ -70,27 +64,24 @@ color: rgb(199, 31, 95);
     padding-top: 175px;
     background-color:#2c2c3d;
 }
-
 .introduction{
     text-align: center;
     color: #f2f2f2;
-    font-weight: bolder;
-    font-size: 40px;
+    /* font-weight: bold; */
+    font-size: 45px;
 }
-
-.myWorkBtn{
+.viewMyWorkBtn{
     background-color:#2c2c3d;
-    border: solid; 
-    border-color: #f2f2f2;
-    padding: 13px 32px;
-    text-align: center;
+    border: solid  #f2f2f2; 
+    color: #f2f2f2;
+    padding-left: 20px;
+    justify-content: center;
     text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
+    margin-top: 25px;
     transition: 0.3s;
     font-size: 20px;
 }
-.myWorkBtn:hover{
+.viewMyWorkBtn:hover{
     background-color: #00b6bc;
     color: #f2f2f2;
 }
@@ -98,26 +89,24 @@ color: rgb(199, 31, 95);
 /* About section */
 #about{
     height: auto; 
-    padding-top: 50px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
     font-weight: bold;
     font-size: 30px;
-
 }
 
 
 /* My work section */
 #work{
     height: auto; 
-    padding-top: 50px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
-
     font-weight: bold;
     font-size: 30px;
 }
-    /* Container for projects */
+/* Container for all projects */
 .d-flex-col {
     display: flex;
     justify-content: center;
@@ -125,12 +114,7 @@ color: rgb(199, 31, 95);
     flex-direction: column;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
+/* container and styling for individual projects */
 .projectContainer {
     display: flex;
     flex-direction: column;
@@ -141,49 +125,66 @@ color: rgb(199, 31, 95);
     border-style: solid;
     border-color: black;
     border-width: 5px;
-    border-radius: 25px;
+    border-radius: 15px;
     height: auto;
     width: auto;
     padding: 25px;
     margin-bottom: 30px;
 }
-
 .projectTitle {
     font-size: 20px;
     padding-bottom: 10px;
 }
-
 .projectSummary {
     font-size: 15px;
-    padding-bottom:10px;
 }
 #myVideo {
     width: 520px;
     height: 440px;
-    /* border: solid, black, 3px; */
 }
-
-/* Contact section  */
-#contact{
-    height: auto; 
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-    /* background-color:#2c2c3d; */
-    font-weight: bold;
-    font-size: 30px;
+.viewMoreWorkBtn{
+    margin-bottom: 35px;
+    transition: 0.3s;
+    font-size: 20px;
 }
-
-
-/* footer  */
-.footer {
-    padding: 3px;
-    bottom: auto;
-    background-color:#20202a;
-    color: #f2f2f2;    
-    font-size: 12px;
-}
-a {
+.viewMoreWorkBtn:hover{
+    background-color: #00b6bc;
     color: #f2f2f2;
+}
+
+/* contact section which is just the footer */
+/* Footer  */
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background-color:#222233;
+    color: darkgray;
+    font-size: 13px;
+}
+/* Social icon styling */
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
     text-decoration: none;
+}
+  /* Add hover effect  */
+.fa:hover {
+    background-color: #00b6bc;
+    color: #f2f2f2;
+}
+.fa-envelope, .fa-linkedin, .fa-github, .fa-facebook{
+    background-color:#2c2c3d;
+    color: white; 
+}
+.fa-angle-double-up{
+    background: rgb(199, 31, 95);
+    color: #f2f2f2;
+    font-size: 30px;
 }

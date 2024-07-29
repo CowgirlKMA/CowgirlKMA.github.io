@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KMA Portfolio</title>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -18,170 +20,185 @@
             </ul>
         </div>
         <div class="introduction">
-            <p>Hello, I'm <span class="highlight">Katherine Ayers</span>.</p>
+            <p>Hello, I'm <span class="highlight" style="font-weight: bold;">Katherine Ayers</span>.</p>
             <p>I'm a full-stack web developer.</p>
-            <br>
-            <button class="myWorkBtn">
-                <a href="#work">View my work </a>
-            </button>
+            <a href="#work">
+                <button class="viewMyWorkBtn">View my work
+                    <i class="fa fa-long-arrow-right"></i>
+                </button>
+            </a>
         </div>
     </div> 
-    <div class="content">
-        <!-- About me section -->
-        <div id="about">ABOUT ME</div> 
-        <div class="container">
-            <!-- My work section -->
-            <div id="work">
-                <div class="d-flex-col">
-                    <p>MY WORK</p>
-                    <!-- Group Project -->
-                    <!-- <a href="https://vimeo.com/959039845/55895db5e9"> -->
-                        <div class="projectContainer">
-                            <div class="projectTitle">
-                                <h3>Holler</h3>
-                            </div>
-                            <div class="projectSummary">
-                                <p>Group Project</p>
-                                <p>Python, HTML, Flask & MySql</p> 
-                            </div>
-                            <video autoplay muted loop controls id="myVideo">
-                                <source src="assets/Holler (GroupProject) 5-8-24.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    <!-- </a> -->
-        <!-- Solo Project -->
-                    <!-- <a href="https://vimeo.com/949750414/f38e496db1"> -->
-                        <div class="projectContainer">
-                            <div class="projectTitle">
-                                <h3>Horsin' Around</h3>
-                            </div>
-                            <div class="projectSummary">
-                                <p>Solo Project</p>
-                                <p>Python, HTML, Flask & MySql</p> 
-                            </div>
-                            <video autoplay muted loop controls id="myVideo">
-                                <source src="assets/HorsinAround (SoloProject) 4-29-24.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    <!-- </a> -->
-        <!-- Nextfix-- Python Belt Exam -->
-                    <!-- <a href="https://vimeo.com/960591504/f75457bcc1"> -->
-                        <div class="projectContainer">
-                            <div class="projectTitle">
-                                <h3>Nextfix</h3>
-                            </div>
-                            <div class="projectSummary">
-                                <p>Python, HTML, Flask & MySql</p> 
-                            </div>
-                            <video autoplay muted loop controls id="myVideo">
-                                <source src="assets/Nextfix(RedBelt)4-2-24.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    <!-- </a> -->
-        <!-- Recipe Share -->
-                    <!-- <a href="https://vimeo.com/980879079/bb0b308db5"> -->
-                        <div class="projectContainer">
-                            <div class="projectTitle">
-                                <h3>Recipe Share</h3>
-                            </div>
-                            <div class="projectSummary">
-                                <p>Python, HTML, Flask & MySql</p> 
-                            </div>
-                            <video autoplay muted loop controls id="myVideo">
-                                <source src="assets/RecipeShare4-1-24.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    <!-- </a> -->
-        <!-- Users CRUD Modularized Assignment -->
-                    <!-- <a href="https://vimeo.com/980985041/f6fb07e0d9"> -->
-                        <div class="projectContainer">
-                            <div class="projectTitle">
-                                <h3>Users CRUD Modularized</h3>
-                            </div>
-                            <div class="projectSummary">
-                                <p>Python, HTML, Flask & MySql</p> 
-                            </div>
-                            <video autoplay muted loop controls id="myVideo">
-                                <source src="assets/UsersCRUDModularized3-21-24.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    <!-- </a> -->
-        <!-- Dojo Survey Assignment -->
-                    <a href="https://vimeo.com/968173896/153e5f7504">
-                        <div class="projectContainer">
-                            <div class="projectTitle">
-                                <h3>Dojo Survey</h3>
-                            </div>
-                            <div class="projectSummary">
-                                <p>Python, HTML & Flask</p> 
-                            </div>
-                        </div>
-                    </a>
-        <!-- Counter Assignment -->
-                    <a href="https://vimeo.com/968168816">
-                        <div class="projectContainer">
-                            <div class="projectTitle">
-                                <h3>Counter</h3>
-                            </div>
-                            <div class="projectSummary">
-                                <p>Python, HTML & Flask</p> 
-                            </div>
-                        </div>
-                    </a>
-        <!-- Katie's Pet Shelter --Web Fundamentals Belt Exam -->
-                    <a href="https://vimeo.com/949666984/5174107df2">
-                        <div class="projectContainer">
-                            <div class="projectTitle">
-                                <h3>Katie's Pet Shelter</h3>
-                            </div>
-                            <div class="projectSummary">
-                                <p>HTML, CSS & JavaScript</p> 
-                            </div>
-                        </div>
-                    </a>                    
-        <!-- Likes Assignment-->
-                    <a href="./externals/LikesAssignment/index.html">
-                        <div class="projectContainer">
-                            <div class="projectTitle">
-                                <h3>Likes</h3>
-                            </div>
-                            <div class="projectSummary">
-                                <p>HTML, CSS & JavaScript</p> 
-                            </div>
-                        </div>
-                    </a>
-        <!-- Button Clicker Assignment-->
-                    <a href="./externals/ButtonClickerAssignment/index.html">
-                        <div class="projectContainer">
-                            <div class="projectTitle">
-                                <h3>Button Clicker</h3>
-                            </div>
-                            <div class="projectSummary">
-                                <p>HTML, CSS & JavaScript</p> 
-                            </div>
-                        </div>
-                    </a>
-        <!-- Portfolio Page Assignment-->
-                        <a href="./externals/PortfolioPageAssignment/index.html">
-                            <div class="projectContainer">
-                                <div class="projectTitle">
-                                    <h3>Portfolio Page</h3>
-                                </div>
-                                <div class="projectSummary">
-                                    <p>HTML & CSS</p> 
-                                </div>
-                            </div>
-                        </a>
-                </div>
-            </div> 
-<!-- Contact section            -->
-            <div id="contact">CONTACT</div> 
+<!-- About me section -->
+    <div id="about">ABOUT ME</div> 
+<!-- My work section -->
+    <div id="work">MY WORK</div> 
+    <div class="d-flex-col">
+            <!-- Group Project -->
+        <div class="projectContainer">
+            <div class="projectTitle">
+                <h3>Holler</h3>
+            </div>
+            <div class="projectSummary">
+                <p>Group Project</p>
+                <p>Python, HTML, Flask & MySql</p> 
+            </div>
+            <video muted controls id="myVideo">
+                <source src="assets/Holler (GroupProject) 5-8-24.mp4" type="video/mp4">
+            </video>
         </div>
-        <button><a class="highlight" href="#top">BACK TO TOP</a></button>
+            <!-- Solo Project -->
+        <div class="projectContainer">
+            <div class="projectTitle">
+                <h3>Horsin' Around</h3>
+            </div>
+            <div class="projectSummary">
+                <p>Solo Project</p>
+                <p>Python, HTML, Flask & MySql</p> 
+            </div>
+            <video muted controls id="myVideo">
+                <source src="assets/HorsinAround (SoloProject) 4-29-24.mp4" type="video/mp4">
+            </video>
+        </div>
+            <!-- Nextfix-- Python Belt Exam -->
+        <div class="projectContainer">
+            <div class="projectTitle">
+                <h3>Nextfix</h3>
+            </div>
+            <div class="projectSummary">
+                <p>Python, HTML, Flask & MySql</p> 
+            </div>
+            <video muted controls id="myVideo">
+                <source src="assets/Nextfix(RedBelt)4-2-24.mp4" type="video/mp4">
+            </video>
+        </div>
+            <!-- Recipe Share -->
+        <div class="projectContainer">
+            <div class="projectTitle">
+                <h3>Recipe Share</h3>
+            </div>
+            <div class="projectSummary">
+                <p>Python, HTML, Flask & MySql</p> 
+            </div>
+            <video muted controls id="myVideo">
+                <source src="assets/RecipeShare4-1-24.mp4" type="video/mp4">
+            </video>
+        </div>
+            <!-- Users CRUD Modularized Assignment -->
+        <div class="projectContainer">
+            <div class="projectTitle">
+                <h3>Users CRUD Modularized</h3>
+            </div>
+            <div class="projectSummary">
+                <p>Python, HTML, Flask & MySql</p> 
+            </div>
+            <video muted controls id="myVideo">
+                <source src="assets/UsersCRUDModularized3-21-24.mp4" type="video/mp4">
+            </video>
+        </div>
+            <!-- Dojo Survey Assignment -->
+        <a href="https://vimeo.com/968173896/153e5f7504">
+            <div class="projectContainer">
+                <div class="projectTitle">
+                    <h3>Dojo Survey</h3>
+                </div>
+                <div class="projectSummary">
+                    <p>Python, HTML & Flask</p> 
+                </div>
+            </div>
+        </a>
+        <!-- Counter Assignment -->
+        <a href="https://vimeo.com/968168816">
+            <div class="projectContainer">
+                <div class="projectTitle">
+                    <h3>Counter</h3>
+                </div>
+                <div class="projectSummary">
+                    <p>Python, HTML & Flask</p> 
+                </div>
+            </div>
+        </a>
+        <!-- Katie's Pet Shelter --Web Fundamentals Belt Exam -->
+        <a href="https://vimeo.com/949666984/5174107df2">
+            <div class="projectContainer">
+                <div class="projectTitle">
+                    <h3>Katie's Pet Shelter</h3>
+                </div>
+                <div class="projectSummary">
+                    <p>HTML, CSS & JavaScript</p> 
+                </div>
+            </div>
+        </a>                    
+        <!-- Likes Assignment-->
+        <a href="./externals/LikesAssignment/index.html">
+            <div class="projectContainer">
+                <div class="projectTitle">
+                    <h3>Likes</h3>
+                </div>
+                <div class="projectSummary">
+                    <p>HTML, CSS & JavaScript</p> 
+                </div>
+            </div>
+        </a>
+        <!-- Button Clicker Assignment-->
+        <a href="./externals/ButtonClickerAssignment/index.html">
+            <div class="projectContainer">
+                <div class="projectTitle">
+                    <h3>Button Clicker</h3>
+                </div>
+                <div class="projectSummary">
+                    <p>HTML, CSS & JavaScript</p> 
+                </div>
+            </div>
+        </a>
+        <!-- Portfolio Page Assignment-->
+        <a href="./externals/PortfolioPageAssignment/index.html">
+            <div class="projectContainer">
+                <div class="projectTitle">
+                    <h3>Portfolio Page</h3>
+                </div>
+                <div class="projectSummary">
+                    <p>HTML & CSS</p> 
+                </div>
+            </div>
+        </a>
+        <a href="#work">
+            <button class="viewMoreWorkBtn">View more work
+            </button>
+        </a>
     </div>
+<!-- Contact section -->
+    <div id="contact"></div> 
     <div class="footer">
-        <p>Katherine Ayers &copy;2024</p>
-        <p><a href="http://www.freepik.com">Background Designed by Bewalrus / Freepik</a></p>
+        <a href="#top">
+            <button class="btn" >
+                <i class="fa fa-angle-double-up"></i>
+            </button>
+        </a>
+        <div class="socialicons">
+            <a href="mailto:kmildredayers@gmail.com">
+                <button class="btn" >
+                    <i class="fa fa-envelope"></i>
+                </button>
+            </a>
+            <a href="https://www.linkedin.com/in/katherine-ayers">
+                <button class="btn" >
+                    <i class="fa fa-linkedin"></i>
+                </button>
+            </a>
+            <a href="https://github.com/CowgirlKMA">
+                <button class="btn" >
+                    <i class="fa fa-github"></i>
+                </button>
+            </a>
+            <a href="https://www.facebook.com/katie.ayers.50">
+                <button class="btn" >
+                    <i class="fa fa-facebook"></i>
+                </button>
+            </a>
+        </div>
+        <p>KATHERINE AYERS <span class="highlight">&copy;2024</span></p>
+        <!-- <p><a href="http://www.freepik.com">Background Designed by Bewalrus / Freepik</a></p> -->
     </div>
     <script src="./script.js"></script>
 </body>
