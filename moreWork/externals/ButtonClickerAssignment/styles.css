@@ -8,19 +8,19 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 45%;
+    width: 50%;
 }
 /*styling of navigation bar*/
 .nav-bar{
     background-color: lightgray;
-    height: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .nav-title{
     color: black;
-    font-size: 50px;  
+    font-size: 35px;  
 }
 .search{
     height: 30px;
@@ -56,8 +56,8 @@
     justify-content: center;
     align-items: center;
     border: solid black 2px;
-    width: 450px;
-    height: 250px;
+    width: 350px;
+    height: 200px;
     margin-top: 15px;
 }
 .left-side-top, .left-side-bottom{
@@ -86,7 +86,7 @@
 }
 /* styling of text */
 .ninjas{
-    font-size: 30px;
+    font-size: 25px;
 }
 .u-line{
     text-decoration: underline;

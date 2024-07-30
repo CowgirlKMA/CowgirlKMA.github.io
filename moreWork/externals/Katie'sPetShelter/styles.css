@@ -12,7 +12,7 @@
 .both-headers{
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 250px;
     background-color: darkcyan;
     border: 5px solid black;
     margin-bottom: 30px;
@@ -21,10 +21,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 40px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 span{
 color: azure;
@@ -34,8 +34,8 @@ color: azure;
     color: blueviolet;
     border: solid blueviolet 4px;
     border-radius: 50%;
-    padding: 40px;
-    font-size: 40px;
+    padding: 20px;
+    font-size: 30px;
 }
 .header-2{
     display: flex;
