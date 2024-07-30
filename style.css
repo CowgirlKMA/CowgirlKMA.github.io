@@ -32,8 +32,8 @@ color: rgb(199, 31, 95);
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 20px;
-    padding-left: 40px;
+    padding: 15px;
+    padding-left: 30px;
     text-decoration: none;
     font-size: 15px;
 } 
@@ -60,7 +60,7 @@ ul{
 /* Main sections */
 /* Home Section */
 #home{
-    height: 525px; 
+    height: 415px; 
     padding-top: 175px;
     background-color:#2c2c3d;
 }
@@ -78,6 +78,7 @@ ul{
     justify-content: center;
     text-decoration: none;
     margin-top: 25px;
+    border-radius: 15px;
     transition: 0.3s;
     font-size: 20px;
 }
@@ -88,19 +89,35 @@ ul{
 
 /* About section */
 #about{
-    height: auto; 
-    padding-top: 80px;
+    padding-top: 100px;
+}
+.intro{
     display: flex;
     justify-content: center;
-    font-weight: bold;
-    font-size: 30px;
+}
+.col1 {
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 240px;
+    min-width: 240px;
+    margin-right: 30px;
+    border: solid black 3px;
+    border-radius: 15px;
+}
+.photo {
+    height: 350px;
+    width: 350px;
+    border: solid black 3px;
+    border-radius: 15px;
 }
 
 
 /* My work section */
 #work{
     height: auto; 
-    padding-top: 80px;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -143,9 +160,14 @@ ul{
     height: 440px;
 }
 .viewMoreWorkBtn{
+    background-color: #222233;
+    border: solid  black; 
+    color: #f2f2f2;
     margin-bottom: 35px;
+    border-radius: 15px;
     transition: 0.3s;
     font-size: 20px;
+    padding-left: 20px;
 }
 .viewMoreWorkBtn:hover{
     background-color: #00b6bc;

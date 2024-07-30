@@ -1,0 +1,152 @@
+*{
+    padding:0;
+    margin:0;
+}
+@font-face {
+    font-family: 'CustomFont'; /* Name your font family */
+    src: url('font/Raleway-Regular.ttf'); /* Locate the .ttf file within your directory*/
+}
+html {
+    scroll-behavior: smooth;
+}    
+body{  
+    font-family: 'CustomFont', raleway-regular; /* Use the font family */
+    /* background-image: url("assets/16154.jpg"); */
+}
+a {
+    text-decoration: none;
+}
+/* Text styling */
+.highlight{
+color: rgb(199, 31, 95);
+
+}
+/* Navbar and navbar links styling */
+#navbar {
+    width: 100%;
+    background-color:#222233;
+}
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 15px;
+} 
+#navbar a:hover {
+    color:  rgb(199, 31, 95);
+}
+ul{
+    list-style-type: none;
+    border-bottom: solid 5px  #00b6bc;
+}
+/* Psuedo selector for when it's not sticky */
+#navbar:not(.sticky){
+    position: absolute;
+    bottom: 0px;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* More of my work section */
+#work{
+    height: auto; 
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+/* Container for all projects */
+.d-flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* container and styling for individual projects */
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 15px;
+    height: auto;
+    width: auto;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+.projectTitle {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.projectSummary {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+#myVideo {
+    width: 520px;
+    height: 440px;
+}
+.externalLink{
+    font-weight: bold;
+}
+.externalLink a:hover{
+    color:  black;
+    background-color: #00b6bc;
+}
+.externals{
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+/* Footer  */
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background-color:#222233;
+    color: darkgray;
+    font-size: 13px;
+}
+/* Social icon styling */
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Up arrow styling */
+.fa:hover {
+    background-color: #00b6bc;
+    color: #f2f2f2;
+}
+.fa-envelope, .fa-linkedin, .fa-github, .fa-facebook{
+    background-color:#2c2c3d;
+    color: white; 
+}
+.fa-angle-double-up{
+    background: rgb(199, 31, 95);
+    color: #f2f2f2;
+    font-size: 30px;
+}
