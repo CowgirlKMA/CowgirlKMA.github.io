@@ -11,7 +11,7 @@ html {
 }    
 body{  
     font-family: 'CustomFont', raleway-regular; /* Use the font family */
-    /* background-image: url("assets/16154.jpg"); */
+    background-image: url("assets/16154.jpg");
 }
 a {
     text-decoration: none;

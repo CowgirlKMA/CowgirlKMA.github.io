@@ -21,7 +21,6 @@ function initScroll(elementId){
 }
 
 
-
 // Get the navbar
 var navbar = document.getElementById("navbar");
 // Get the offset position of the navbar
