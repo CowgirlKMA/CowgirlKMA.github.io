@@ -1,6 +1,7 @@
 *{
     padding:0;
     margin:0;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: 'CustomFont'; /* Name your font family */
@@ -11,7 +12,6 @@ html {
 }    
 body{  
     font-family: 'CustomFont', raleway-regular; /* Use the font family */
-    background-image: url("assets/16154.jpg");
 }
 a {
     color: #f2f2f2;
@@ -19,13 +19,14 @@ a {
 }
 /* Text styling */
 .highlight{
-color: rgb(199, 31, 95);
-
+color: #df265e;
 }
 /* Navbar and navbar links styling */
 #navbar {
     width: 100%;
+    z-index: 9999;
     background-color:#222233;
+    border-bottom: solid 5px  #00b6bc;
 }
 #navbar a {
     float: left;
@@ -38,11 +39,10 @@ color: rgb(199, 31, 95);
     font-size: 15px;
 } 
 #navbar a:hover {
-    color:  rgb(199, 31, 95);
+    color: #00b6bc
 }
 ul{
     list-style-type: none;
-    border-bottom: solid 5px  #00b6bc;
 }
 /* Psuedo selector for when it's not sticky */
 #navbar:not(.sticky){
@@ -57,17 +57,17 @@ ul{
 }
 
 
+
 /* Main sections */
 /* Home Section */
 #home{
-    height: 415px; 
-    padding-top: 175px;
-    background-color:#2c2c3d;
 }
 .introduction{
+    height: 410px; 
+    padding-top: 175px;
+    background-color:#2c2c3d;
     text-align: center;
     color: #f2f2f2;
-    /* font-weight: bold; */
     font-size: 45px;
 }
 .viewMyWorkBtn{
@@ -76,7 +76,6 @@ ul{
     color: #f2f2f2;
     padding-left: 20px;
     justify-content: center;
-    text-decoration: none;
     margin-top: 25px;
     border-radius: 15px;
     transition: 0.3s;
@@ -89,46 +88,134 @@ ul{
 
 /* About section */
 #about{
+    /* height: px; */
     padding-top: 100px;
 }
-.intro{
+/* Create two equal columns containing text and slideshow side by side */
+.introRow {
     display: flex;
-    justify-content: center;
 }
-.col1 {
+/* This column contains the text about me */
+.introColumn1 {
+    flex: 50%;
     padding: 2px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 240px;
-    min-width: 240px;
-    margin-right: 30px;
-    border: solid black 3px;
+    max-width: 350px;
+    min-width: 350px;
+    border: solid #222233 3px;
+    border-radius: 10px;
+}
+/* This column contains the slideshow */
+.introColumn2{
+    flex: 50%;
+}
+/* this is the actual container for the slideshow  */
+.photosDots {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+/* slideshow */
+.mySlides {
+    display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.photo {
+    height: 400px;
+    width: 350px;
+    border: solid #222233 3px;
     border-radius: 15px;
 }
-.photo {
-    height: 350px;
-    width: 350px;
-    border: solid black 3px;
-    border-radius: 15px;
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .introColumn1 .introColumn2 {
+        width: 100%;
+    }
 }
 
 
 /* My work section */
 #work{
     height: auto; 
-    padding-top: 40px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     font-weight: bold;
     font-size: 30px;
 }
 /* Container for all projects */
-.d-flex-col {
+/* Container for flexboxes */
+.row {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+  /* Create four equal columns */
+.column {
+    flex: 25%;
+    padding: 20px;
+}
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .column {
+        flex: 50%;
+    }
+}
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
 }
 
 /* container and styling for individual projects */
@@ -138,15 +225,15 @@ ul{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: black;
+    color: #222233;
     border-style: solid;
-    border-color: black;
-    border-width: 5px;
+    border-color: #222233;
+    border-width: 2px;
     border-radius: 15px;
     height: auto;
     width: auto;
-    padding: 25px;
-    margin-bottom: 30px;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 .projectTitle {
     font-size: 20px;
@@ -156,18 +243,19 @@ ul{
     font-size: 15px;
 }
 #myVideo {
-    width: 520px;
-    height: 440px;
+    width: 500px;
+    height: 420px;
 }
 .viewMoreWorkBtn{
-    background-color: #222233;
-    border: solid  black; 
+    background-color: #2c2c3d;
+    border: solid  #222233; 
     color: #f2f2f2;
+    padding-left: 20px;
+    justify-content: center;
     margin-bottom: 35px;
     border-radius: 15px;
     transition: 0.3s;
     font-size: 20px;
-    padding-left: 20px;
 }
 .viewMoreWorkBtn:hover{
     background-color: #00b6bc;
@@ -179,20 +267,22 @@ ul{
 .footer {
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 200px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 30px;
+    border-top: solid 5px  #00b6bc;
     background-color:#222233;
     color: darkgray;
     font-size: 13px;
 }
 /* Social icon styling */
 .fa {
-    padding: 15px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 20px;
     width: 40px;
+    align-items: center;
     text-align: center;
     text-decoration: none;
 }
@@ -206,7 +296,7 @@ ul{
     color: white; 
 }
 .fa-angle-double-up{
-    background: rgb(199, 31, 95);
+    background: #df265e;
     color: #f2f2f2;
-    font-size: 30px;
+    font-size: 20px;
 }

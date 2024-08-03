@@ -1,6 +1,7 @@
 *{
     padding:0;
     margin:0;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: 'CustomFont'; /* Name your font family */
@@ -11,67 +12,77 @@ html {
 }    
 body{  
     font-family: 'CustomFont', raleway-regular; /* Use the font family */
-    background-image: url("assets/16154.jpg");
 }
 a {
     text-decoration: none;
 }
+
 /* Text styling */
 .highlight{
-color: rgb(199, 31, 95);
+    color: #df265e;
+    }
 
-}
 /* Navbar and navbar links styling */
 #navbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
     width: 100%;
     background-color:#222233;
+    border-bottom: solid 5px #00b6bc;
 }
 #navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     padding-left: 30px;
     text-decoration: none;
     font-size: 15px;
 } 
 #navbar a:hover {
-    color:  rgb(199, 31, 95);
+    color: #00b6bc;
 }
 ul{
     list-style-type: none;
-    border-bottom: solid 5px  #00b6bc;
 }
-/* Psuedo selector for when it's not sticky */
-#navbar:not(.sticky){
-    position: absolute;
-    bottom: 0px;
-}
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+
 
 
 /* More of my work section */
 #work{
     height: auto; 
-    padding-top: 80px;
     display: flex;
     justify-content: center;
     font-weight: bold;
     font-size: 30px;
 }
 /* Container for all projects */
-.d-flex-col {
+/* Container for flexboxes */
+.row {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
+  /* Create four equal columns */
+.column {
+    flex: 25%;
+    padding: 20px;
+}
+
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .column {
+        flex: 50%;
+    }
+}
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
 
 /* container and styling for individual projects */
 .projectContainer {
@@ -80,15 +91,15 @@ ul{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: black;
+    color: #222233;
     border-style: solid;
-    border-color: black;
-    border-width: 5px;
+    border-color: #222233;
+    border-width: 2px;
     border-radius: 15px;
     height: auto;
     width: auto;
-    padding: 25px;
-    margin-bottom: 30px;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 .projectTitle {
     font-size: 20px;
@@ -99,44 +110,60 @@ ul{
     padding-bottom: 10px;
 }
 #myVideo {
-    width: 520px;
-    height: 440px;
+    width: 500px;
+    height: 420px;
 }
-.externalLink{
-    font-weight: bold;
-}
-.externalLink a:hover{
-    color:  black;
-    background-color: #00b6bc;
+
+/* Externals */
+.externalProjectContainer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #222233;
+    border-style: solid;
+    border-color: #222233;
+    border-width: 2px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 .externals{
     display: flex;
     align-content: space-evenly;
     justify-content: space-evenly;
 }
+.externalLink{
+    font-weight: bold;
+    color:  #222233;
+}
+.externalLink a:hover{
+    color: #00b6bc;
+}
 
 /* Footer  */
 .footer {
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 200px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 30px;
+    border-top: solid 5px  #00b6bc;
     background-color:#222233;
     color: darkgray;
     font-size: 13px;
 }
 /* Social icon styling */
 .fa {
-    padding: 15px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 20px;
     width: 40px;
+    align-items: center;
     text-align: center;
     text-decoration: none;
 }
-/* Up arrow styling */
+  /* Add hover effect  */
 .fa:hover {
     background-color: #00b6bc;
     color: #f2f2f2;
@@ -146,7 +173,7 @@ ul{
     color: white; 
 }
 .fa-angle-double-up{
-    background: rgb(199, 31, 95);
+    background: #df265e;
     color: #f2f2f2;
-    font-size: 30px;
+    font-size: 20px;
 }
