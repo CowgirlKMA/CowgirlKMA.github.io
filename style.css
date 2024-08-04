@@ -63,8 +63,8 @@ ul{
     top: 0;
     width: 100%;
 }
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
-@media screen and (max-width: 600px) {
+/* When the screen is less than 480 pixels wide: phone, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 480px) {
     .myNavbar a:not(:first-child) {display: none;}
     .myNavbar a.icon {
         float: right;
@@ -72,7 +72,7 @@ ul{
     }
 }
 /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .myNavbar.responsive {position: relative;}
     .myNavbar.responsive a.icon {
         position: absolute;
@@ -179,6 +179,8 @@ ul{
     width: 350px;
     border: solid #222233 3px;
     border-radius: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 /* The dots/bullets/indicators */
 .dot {
@@ -204,8 +206,8 @@ ul{
     to {opacity: 1}
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* Responsive layout - when the screen is less than 48px wide: phone, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
     .aboutColumn1 .aboutColumn2 {
         width: 100%;
     }
@@ -232,14 +234,14 @@ ul{
     flex: 25%;
     padding: 20px;
 }
-  /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
+  /* On screens that are 767px wide or less: ipad, go from four columns to two columns */
+@media screen and (max-width: 767px) {
     .column {
         flex: 50%;
     }
 }
-  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+  /* On screens that are 480px wide or less: phone, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
     .row {
         flex-direction: column;
     }

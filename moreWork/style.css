@@ -70,14 +70,14 @@ ul{
     padding: 20px;
 }
 
-  /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
+  /* On screens that are 767px wide or less: ipad, go from four columns to two columns */
+@media screen and (max-width: 767px) {
     .column {
         flex: 50%;
     }
 }
-  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+  /* On screens that are 480px wide or less: phone, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
     .row {
         flex-direction: column;
     }
