@@ -42,13 +42,14 @@ window.onresize = () => {
     shouldStickPosition = navbar.offsetTop;
 };
 
-
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+/* Toggle between adding and removing the "responsive" class to navbar when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("navbar");
+    if (x.className === "myNavbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "myNavbar";
+    }}
 
 
 //Slideshow on about page
@@ -80,3 +81,8 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

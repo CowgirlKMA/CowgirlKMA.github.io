@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- Home section contains the introduction -->
+    <!-- HOME SECTION contains the introduction -->
         <div id="home">
-            <div id="navbar">
+            <!-- Navigation bar -->
+            <div class="myNavbar" id="navbar">
                 <ul>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#work">WORK</a></li>
                     <li><a href="#contact">CONTACT</a></li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
                 </ul>
             </div> 
             <div class="introduction">
@@ -28,78 +31,80 @@
                     </button>
                 </a>
             </div>
-        <!-- Navigation bar -->
         </div> 
-<!-- About me section -->
-        <div id="about"></div>
-        <div class="introRow">
-        <!--Text section -->
-            <div class="introColumn1">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt consequatur magnam distinctio facilis minima molestiae asperiores odio, laudantium amet nisi ab nemo ducimus, error porro officiis dolor ratione aspernatur! Numquam.</p>
-            </div>
-        <!-- Slideshow section -->
-            <div class="introColumn2">
-                <!-- Container for slideshow -->
-                <div class="photosDots">
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="assets/NuggetUnionStation.JPEG" class="photo">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="assets/Charlie and Ringo.JPEG" class="photo">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="assets/Alvin3days.JPG" class="photo">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="assets/goats.jpg" class="photo">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="assets/NuggetLG.PNG" class="photo">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="assets/cows.jpg" class="photo">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="assets/chickens.jpg" class="photo">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="assets/NuggetLG2.JPG" class="photo">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="assets/CharlieSUP.jpg" class="photo">
-                        </div>
-                        <div class="mySlides fade">
-                            <img src="assets/Alvin.jpg" class="photo">
-                        </div>
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!-- ABOUT SECTION -->
+        <div id="about">
+            <div class="aboutRow">
+            <!--Text section -->
+                <div class="aboutColumn1">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt consequatur magnam distinctio facilis minima molestiae asperiores odio, laudantium amet nisi ab nemo ducimus, error porro officiis dolor ratione aspernatur! Numquam.</p>
                     </div>
-                    <br>
-                    <!-- The dots/circles -->
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span>
-                        <span class="dot" onclick="currentSlide(6)"></span>
-                        <span class="dot" onclick="currentSlide(7)"></span>
-                        <span class="dot" onclick="currentSlide(8)"></span>
-                        <span class="dot" onclick="currentSlide(9)"></span>
-                        <span class="dot" onclick="currentSlide(10)"></span>
+                </div>
+            <!-- Slideshow section -->
+                <div class="aboutColumn2">
+                    <!-- Container for slideshow -->
+                    <div class="photosDots">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="assets/NuggetUnionStation.JPEG" class="photo">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/Charlie and Ringo.JPEG" class="photo">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/Alvin3days.JPG" class="photo">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/goats.jpg" class="photo">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/NuggetLG.PNG" class="photo">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/cows.jpg" class="photo">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/chickens.jpg" class="photo">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/NuggetLG2.JPG" class="photo">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/CharlieSUP.jpg" class="photo">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/Alvin.jpg" class="photo">
+                            </div>
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
+                            <span class="dot" onclick="currentSlide(7)"></span>
+                            <span class="dot" onclick="currentSlide(8)"></span>
+                            <span class="dot" onclick="currentSlide(9)"></span>
+                            <span class="dot" onclick="currentSlide(10)"></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    <!-- My work section -->
-        <div id="work"></div> 
-        <div class="row">
+<!-- WORK SECTION -->
+        <div id="work"> 
+            <div class="row">
                     <!-- Group Project -->
                 <div class="column">
                     <div class="projectTitle">
-                        <h3>Holler</h3>
+                        <h3>HOLLER</h3>
                     </div>
                     <div class="projectSummary">
                         <p>Group Project</p>
@@ -112,7 +117,7 @@
                     <!-- Solo Project -->
                 <div class="column">
                     <div class="projectTitle">
-                        <h3>Horsin' Around</h3>
+                        <h3>HORSIN' AROUND</h3>
                     </div>
                     <div class="projectSummary">
                         <p>Solo Project</p>
@@ -125,7 +130,7 @@
                     <!-- Nextfix-- Python Belt Exam -->
                 <div class="column">
                     <div class="projectTitle">
-                        <h3>Nextfix</h3>
+                        <h3>NEXTFIX</h3>
                     </div>
                     <div class="projectSummary">
                         <p>Python, HTML, Flask & MySql</p> 
@@ -137,7 +142,7 @@
                     <!-- Recipe Share -->
                 <div class="column">
                     <div class="projectTitle">
-                        <h3>Recipe Share</h3>
+                        <h3>RECIPE SHARE</h3>
                     </div>
                     <div class="projectSummary">
                         <p>Python, HTML, Flask & MySql</p> 
@@ -148,12 +153,12 @@
                 </div>
             </div>
         </div>
-        <a href="moreWork/index.html">
-            <button class="viewMoreWorkBtn">View more work
-                <i class="fa fa-long-arrow-right"></i>
-            </button>
-        </a>
-    <!-- Contact section -->
+    <a href="moreWork/index.html">
+        <button class="viewMoreWorkBtn">View more work
+            <i class="fa fa-long-arrow-right"></i>
+        </button>
+    </a>
+<!-- CONTACT SECTION -->
         <div id="contact"></div> 
         <div class="footer">
             <a href="#top">

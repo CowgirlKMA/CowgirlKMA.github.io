@@ -22,13 +22,16 @@ a {
 color: #df265e;
 }
 /* Navbar and navbar links styling */
-#navbar {
-    width: 100%;
+.myNavbar {
     z-index: 9999;
+    overflow: hidden;
     background-color:#222233;
     border-bottom: solid 5px  #00b6bc;
 }
-#navbar a {
+ul{
+    list-style-type: none;
+}
+.myNavbar a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -38,34 +41,60 @@ color: #df265e;
     text-decoration: none;
     font-size: 15px;
 } 
-#navbar a:hover {
+.myNavbar a:hover {
     color: #00b6bc
 }
-ul{
-    list-style-type: none;
+/* #navbar a.active {
+    background-color: #222233;
+    color: #00b6bc;
+} */
+/* Hide the link that should open and close the navbar on small screens */
+.myNavbar .icon {
+    display: none;
 }
 /* Psuedo selector for when it's not sticky */
-#navbar:not(.sticky){
+/* #navbar:not(.sticky){
     position: absolute;
     bottom: 0px;
-}
+} */
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 600px) {
+    .myNavbar a:not(:first-child) {display: none;}
+    .myNavbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .myNavbar.responsive {position: relative;}
+    .myNavbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .myNavbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
 
 
 
 /* Main sections */
-/* Home Section */
-#home{
-}
+/****** HOME SECTION ******/
 .introduction{
-    height: 410px; 
+    height: 560px; 
     padding-top: 175px;
     background-color:#2c2c3d;
+    border-bottom: solid 5px  #00b6bc;
     text-align: center;
     color: #f2f2f2;
     font-size: 45px;
@@ -86,29 +115,29 @@ ul{
     color: #f2f2f2;
 }
 
-/* About section */
+/****** ABOUT SECTION ******/
 #about{
-    /* height: px; */
-    padding-top: 100px;
+    height: 560px;
+    padding-top: 50px;
+    background-color: #ebeff3; 
+    border-bottom: solid 5px  #00b6bc;
 }
 /* Create two equal columns containing text and slideshow side by side */
-.introRow {
+.aboutRow {
     display: flex;
 }
-/* This column contains the text about me */
-.introColumn1 {
-    flex: 50%;
+.text {
     padding: 2px;
     justify-content: center;
     align-items: center;
     text-align: center;
     max-width: 350px;
     min-width: 350px;
+    max-height: 400px;
     border: solid #222233 3px;
     border-radius: 10px;
 }
-/* This column contains the slideshow */
-.introColumn2{
+.aboutColumn1 .aboutColumn2{
     flex: 50%;
 }
 /* this is the actual container for the slideshow  */
@@ -117,11 +146,11 @@ ul{
     position: relative;
     margin: auto;
 }
-/* slideshow */
+/* Hide the images by default */
 .mySlides {
     display: none;
 }
-/* Next & previous buttons */
+/* Previous & next buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -145,14 +174,12 @@ ul{
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
-
 .photo {
     height: 400px;
     width: 350px;
     border: solid #222233 3px;
     border-radius: 15px;
 }
-
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
@@ -179,13 +206,13 @@ ul{
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .introColumn1 .introColumn2 {
+    .aboutColumn1 .aboutColumn2 {
         width: 100%;
     }
 }
 
 
-/* My work section */
+/****** MY WORK SECTION ******/
 #work{
     height: auto; 
     padding-top: 50px;
@@ -251,7 +278,7 @@ ul{
     border: solid  #222233; 
     color: #f2f2f2;
     padding-left: 20px;
-    justify-content: center;
+    margin-left: 20px;
     margin-bottom: 35px;
     border-radius: 15px;
     transition: 0.3s;
@@ -262,7 +289,7 @@ ul{
     color: #f2f2f2;
 }
 
-/* contact section which is just the footer */
+/******CONTACT SECTION******which is just the footer */
 /* Footer  */
 .footer {
     display: flex;
