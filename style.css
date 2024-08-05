@@ -246,7 +246,7 @@ ul{
         flex: 100%;
     }
 }
-  /* On screens that are 480px wide or less: phone, make the columns stack on top of each other instead of next to each other */
+/* On screens that are 480px wide or less: phone, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 480px) {
     .row {
         flex-direction: column;
