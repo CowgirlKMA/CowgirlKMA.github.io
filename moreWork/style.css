@@ -65,16 +65,16 @@ ul{
     display: flex;
     flex-wrap: wrap;
 }
-/* Create four equal columns */
+/* Create two equal columns */
 .column {
-    flex: 25%;
+    flex: 50%;
     padding: 20px;
 }
 
-  /* On screens that are 767px wide or less: ipad, go from four columns to two columns */
+  /* On screens that are 767px wide or less: ipad, go from two columns to one columns */
 @media screen and (max-width: 767px) {
     .column {
-        flex: 50%;
+        flex: 100%;
     }
 }
   /* On screens that are 480px wide or less: phone, make the columns stack on top of each other instead of next to each other */
@@ -111,10 +111,11 @@ ul{
     padding-bottom: 10px;
 }
 #myVideo {
-    width: 475px;
+    width: 100%;
     height: 400px;
     border: solid black 2px;
     border-radius: 10px;
+    margin-bottom: 35px;
 }
 
 /* Externals */
@@ -126,7 +127,6 @@ ul{
     text-align: center;
     color: #222233;
     border-style: solid;
-    /* background-image: url("assets/16154.jpg"); */
     border-color: #222233;
     border-width: 2px;
     border-radius: 10px;

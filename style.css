@@ -49,9 +49,9 @@ ul{
     color: #00b6bc;
 } */
 /* Hide the link that should open and close the navbar on small screens */
-.myNavbar .icon {
+/* .myNavbar .icon {
     display: none;
-}
+} */
 /* Psuedo selector for when it's not sticky */
 /* #navbar:not(.sticky){
     position: absolute;
@@ -64,15 +64,15 @@ ul{
     width: 100%;
 }
 /* When the screen is less than 480 pixels wide: phone, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .myNavbar a:not(:first-child) {display: none;}
     .myNavbar a.icon {
         float: right;
         display: block;
     }
-}
+} */
 /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .myNavbar.responsive {position: relative;}
     .myNavbar.responsive a.icon {
         position: absolute;
@@ -84,18 +84,20 @@ ul{
         display: block;
         text-align: left;
     }
-}
+} */
 
 
 
 /* Main sections */
 /****** HOME SECTION ******/
 .introduction{
-    height: 560px; 
-    padding-top: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 590px; 
     background-color:#2c2c3d;
     border-bottom: solid 5px  #00b6bc;
-    text-align: center;
     color: #f2f2f2;
     font-size: 45px;
 }
@@ -117,23 +119,27 @@ ul{
 
 /****** ABOUT SECTION ******/
 #about{
-    height: 560px;
+    display: flex;
+    justify-content: space-evenly;
     padding-top: 50px;
     background-color: #ebeff3; 
-    border-bottom: solid 5px  #00b6bc;
+    border-bottom: solid 5px  #00b6bc; 
 }
 /* Create two equal columns containing text and slideshow side by side */
 .aboutRow {
     display: flex;
+    padding-top: 50px;
+    /* justify-content: space-evenly; */
+    align-content: center;
+    height: 590px;
 }
 .text {
-    padding: 2px;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+    align-content: center;
     text-align: center;
     max-width: 350px;
     min-width: 350px;
-    max-height: 400px;
+    height: 400px;
     border: solid #222233 3px;
     border-radius: 10px;
 }
@@ -206,7 +212,7 @@ ul{
     to {opacity: 1}
 }
 
-/* Responsive layout - when the screen is less than 48px wide: phone, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - when the screen is less than 480px wide: phone, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 480px) {
     .aboutColumn1 .aboutColumn2 {
         width: 100%;
@@ -229,15 +235,15 @@ ul{
     display: flex;
     flex-wrap: wrap;
 }
-  /* Create four equal columns */
+  /* Create two equal columns */
 .column {
-    flex: 25%;
+    flex: 50%;
     padding: 20px;
 }
-  /* On screens that are 767px wide or less: ipad, go from four columns to two columns */
+  /* On screens that are 767px wide or less: ipad, go from two columns to one columns */
 @media screen and (max-width: 767px) {
     .column {
-        flex: 50%;
+        flex: 100%;
     }
 }
   /* On screens that are 480px wide or less: phone, make the columns stack on top of each other instead of next to each other */
@@ -272,10 +278,11 @@ ul{
     font-size: 15px;
 }
 #myVideo {
-    width: 475px;
+    width: 100%;
     height: 400px;
     border: solid black 2px;
     border-radius: 10px;
+    margin-bottom: 35px;
 }
 .viewMoreWorkBtn{
     background-color: #2c2c3d;

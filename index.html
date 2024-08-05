@@ -9,100 +9,98 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- HOME SECTION contains the introduction -->
-        <div id="home">
-            <!-- Navigation bar -->
-            <div class="myNavbar" id="navbar">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#work">WORK</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                </ul>
-            </div> 
-            <div class="introduction">
-                <p>Hello, I'm <span class="highlight" style="font-weight: bold;">Katherine Ayers</span>.</p>
-                <p>I'm a full-stack web developer.</p>
-                <a href="#work">
-                    <button class="viewMyWorkBtn">View my work
-                        <i class="fa fa-long-arrow-down"></i>
-                    </button>
-                </a>
-            </div>
-        </div> 
+<!-- Navigation bar -->
+    <div class="myNavbar" id="navbar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+<!-- HOME SECTION contains the introduction -->
+    <div id="home">
+        <div class="introduction">
+            <p>Hello, I'm <span class="highlight" style="font-weight: bold;">Katherine Ayers</span>.</p>
+            <p>I'm a full-stack web developer.</p>
+            <a href="#work">
+                <button class="viewMyWorkBtn">View my work
+                    <i class="fa fa-long-arrow-down"></i>
+                </button>
+            </a>
+        </div>
+    </div> 
 <!-- ABOUT SECTION -->
-        <div id="about">
-            <div class="aboutRow">
-            <!--Text section -->
-                <div class="aboutColumn1">
-                    <div class="text">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt consequatur magnam distinctio facilis minima molestiae asperiores odio, laudantium amet nisi ab nemo ducimus, error porro officiis dolor ratione aspernatur! Numquam.</p>
-                    </div>
+    <div id="about">
+        <div class="aboutRow">
+        <!--Text section -->
+            <div class="aboutColumn1">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio voluptate repudiandae obcaecati ab quas officiis totam dolores aut? Blanditiis perferendis aliquid repudiandae tempora, corrupti cumque ullam voluptatum eveniet quos?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt consequatur magnam distinctio facilis minima molestiae asperiores odio, laudantium amet nisi ab nemo ducimus, error porro officiis dolor ratione aspernatur! Numquam.</p>
                 </div>
-            <!-- Slideshow section -->
-                <div class="aboutColumn2">
-                    <!-- Container for slideshow -->
-                    <div class="photosDots">
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <img src="assets/NuggetUnionStation.JPEG" class="photo">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="assets/Charlie and Ringo.JPEG" class="photo">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="assets/Alvin3days.JPG" class="photo">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="assets/goats.jpg" class="photo">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="assets/NuggetLG.PNG" class="photo">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="assets/cows.jpg" class="photo">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="assets/chickens.jpg" class="photo">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="assets/NuggetLG2.JPG" class="photo">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="assets/CharlieSUP.jpg" class="photo">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="assets/Alvin.jpg" class="photo">
-                            </div>
-                            <!-- Next and previous buttons -->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        <!-- Slideshow section -->
+            <div class="aboutColumn2">
+                <!-- Container for slideshow -->
+                <div class="photosDots">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="assets/NuggetUnionStation.JPEG" class="photo">
                         </div>
-                        <br>
-                        <!-- The dots/circles -->
-                        <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
-                            <span class="dot" onclick="currentSlide(5)"></span>
-                            <span class="dot" onclick="currentSlide(6)"></span>
-                            <span class="dot" onclick="currentSlide(7)"></span>
-                            <span class="dot" onclick="currentSlide(8)"></span>
-                            <span class="dot" onclick="currentSlide(9)"></span>
-                            <span class="dot" onclick="currentSlide(10)"></span>
+                        <div class="mySlides fade">
+                            <img src="assets/Charlie and Ringo.JPEG" class="photo">
                         </div>
+                        <div class="mySlides fade">
+                            <img src="assets/Alvin3days.JPG" class="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="assets/goats.jpg" class="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="assets/NuggetLG.PNG" class="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="assets/cows.jpg" class="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="assets/chickens.jpg" class="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="assets/NuggetLG2.JPG" class="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="assets/CharlieSUP.jpg" class="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="assets/Alvin.jpg" class="photo">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 <!-- WORK SECTION -->
         <div id="work"> 
             <div class="row">
-                    <!-- Group Project -->
                 <div class="column">
+                <!-- Group Project -->
                     <div class="projectTitle">
                         <h3>HOLLER</h3>
                     </div>
@@ -113,22 +111,7 @@
                     <video muted controls id="myVideo">
                         <source src="assets/Holler (GroupProject) 5-8-24.mp4" type="video/mp4">
                     </video>
-                </div>
-                    <!-- Solo Project -->
-                <div class="column">
-                    <div class="projectTitle">
-                        <h3>HORSIN' AROUND</h3>
-                    </div>
-                    <div class="projectSummary">
-                        <p>Solo Project</p>
-                        <p>Python, HTML, Flask & MySql</p> 
-                    </div>
-                    <video muted controls id="myVideo">
-                        <source src="assets/HorsinAround (SoloProject) 4-29-24.mp4" type="video/mp4">
-                    </video>
-                </div>
-                    <!-- Nextfix-- Python Belt Exam -->
-                <div class="column">
+                <!-- Nextfix-- Python Belt Exam -->
                     <div class="projectTitle">
                         <h3>NEXTFIX</h3>
                     </div>
@@ -139,8 +122,19 @@
                         <source src="assets/Nextfix(RedBelt)4-2-24.mp4" type="video/mp4">
                     </video>
                 </div>
-                    <!-- Recipe Share -->
                 <div class="column">
+                <!-- Solo Project -->
+                    <div class="projectTitle">
+                        <h3>HORSIN' AROUND</h3>
+                    </div>
+                    <div class="projectSummary">
+                        <p>Solo Project</p>
+                        <p>Python, HTML, Flask & MySql</p> 
+                    </div>
+                    <video muted controls id="myVideo">
+                        <source src="assets/HorsinAround (SoloProject) 4-29-24.mp4" type="video/mp4">
+                    </video>
+                <!-- Recipe Share -->
                     <div class="projectTitle">
                         <h3>RECIPE SHARE</h3>
                     </div>
@@ -153,13 +147,13 @@
                 </div>
             </div>
         </div>
-    <a href="moreWork/index.html">
-        <button class="viewMoreWorkBtn">View more work
+        <a href="moreWork/index.html">
+            <button class="viewMoreWorkBtn">View more work
             <i class="fa fa-long-arrow-right"></i>
-        </button>
-    </a>
+            </button>
+        </a>
 <!-- CONTACT SECTION -->
-        <div id="contact"></div> 
+    <div id="contact">
         <div class="footer">
             <a href="#top">
                 <button class="btn" >
@@ -191,6 +185,7 @@
             <p>KATHERINE AYERS <span class="highlight">&copy;2024</span></p>
             <!-- <p><a href="http://www.freepik.com">Background Designed by Bewalrus / Freepik</a></p> -->
         </div>
+    </div> 
     <script src="./script.js"></script>
 </body>
 </html>
