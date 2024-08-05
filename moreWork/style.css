@@ -50,9 +50,10 @@ ul{
 
 
 
-/* More of my work section */
-#work{
+/* MORE OF MY WORK SECTION */
+#morework{
     height: auto; 
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -64,7 +65,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
 }
-  /* Create four equal columns */
+/* Create four equal columns */
 .column {
     flex: 25%;
     padding: 20px;
@@ -88,18 +89,18 @@ ul{
 .projectContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: space-around; */
     align-items: center;
     text-align: center;
     color: #222233;
     border-style: solid;
     border-color: #222233;
     border-width: 2px;
-    border-radius: 15px;
+    border-radius: 10px;
     height: auto;
     width: auto;
-    padding: 15px;
-    margin-bottom: 10px;
+    padding: 15px; 
+    margin: 20px;
 }
 .projectTitle {
     font-size: 20px;
@@ -110,22 +111,27 @@ ul{
     padding-bottom: 10px;
 }
 #myVideo {
-    width: 500px;
-    height: 420px;
+    width: 475px;
+    height: 400px;
+    border: solid black 2px;
+    border-radius: 10px;
 }
 
 /* Externals */
 .externalProjectContainer {
+    width: 475px;
+    height: 400px;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #222233;
     border-style: solid;
+    /* background-image: url("assets/16154.jpg"); */
     border-color: #222233;
     border-width: 2px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 15px;
-    margin-bottom: 10px;
+    margin-top: 60px;
 }
 .externals{
     display: flex;
@@ -133,7 +139,7 @@ ul{
     justify-content: space-evenly;
 }
 .externalLink{
-    font-weight: bold;
+    /* font-weight: bold; */
     color:  #222233;
 }
 .externalLink a:hover{
