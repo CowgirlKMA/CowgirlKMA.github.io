@@ -74,13 +74,7 @@ ul{
   /* On screens that are 767px wide or less: ipad, go from two columns to one columns */
 @media screen and (max-width: 767px) {
     .column {
-        flex: 100%;
-    }
-}
-  /* On screens that are 480px wide or less: phone, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 480px) {
-    .row {
-        flex-direction: column;
+        width: 100%;
     }
 }
 
