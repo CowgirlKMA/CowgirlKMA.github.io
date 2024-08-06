@@ -241,7 +241,7 @@ ul{
     padding: 20px;
 }
   /* On screens that are 767px wide or less: ipad, go from two columns to one columns */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 828px) {
     .column {
         width: 100%;
     }
