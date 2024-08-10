@@ -19,7 +19,7 @@ a {
 }
 /* Text styling */
 .highlight{
-color: #df265e;
+    color: #df265e;
 }
 /* Navbar and navbar links styling */
 .myNavbar {
@@ -36,8 +36,8 @@ ul{
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 15px;
-    padding-left: 30px;
+    padding: 10px;
+    padding-left: 20px;
     text-decoration: none;
     font-size: 15px;
 } 
@@ -51,14 +51,14 @@ ul{
 /* Hide the link that should open and close the navbar on small screens */
 /* .myNavbar .icon {
     display: none;
-} */
-/* Psuedo selector for when it's not sticky */
-/* #navbar:not(.sticky){
-    position: absolute;
-    bottom: 0px;
-} */
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
+    } */
+    /* Psuedo selector for when it's not sticky */
+    /* #navbar:not(.sticky){
+        position: absolute;
+        bottom: 0px;
+        } */
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        .sticky {
     position: fixed;
     top: 0;
     width: 100%;
@@ -121,18 +121,22 @@ ul{
 #about{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 50px;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    height: auto;
     background-color: #ebeff3; 
     border-bottom: solid 5px  #00b6bc; 
 }
 /* Create two equal columns containing text and slideshow side by side */
-.aboutRow {
+/* .aboutRow {
     display: flex;
     padding-top: 50px;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     align-content: center;
-    height: 590px;
 }
+.aboutColumn1 .aboutColumn2{
+    flex: 50%;
+} */
 .text {
     padding: 10px;
     align-content: center;
@@ -143,10 +147,7 @@ ul{
     border: solid #222233 3px;
     border-radius: 10px;
 }
-.aboutColumn1 .aboutColumn2{
-    flex: 50%;
-}
-/* this is the actual container for the slideshow  */
+/* this is the container for the slideshow and dots  */
 .photosDots {
     max-width: 500px;
     position: relative;
@@ -213,11 +214,11 @@ ul{
 }
 
 /* Responsive layout - when the screen is less than 480px wide: phone, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .aboutColumn1 .aboutColumn2 {
         width: 100%;
     }
-}
+} */
 
 
 /****** MY WORK SECTION ******/
@@ -240,40 +241,24 @@ ul{
     flex: 50%;
     padding: 20px;
 }
-  /* On screens that are 767px wide or less: ipad, go from two columns to one columns */
-@media screen and (max-width: 828px) {
+  /* On screens that are 767px wide or less, go from two columns to one columns */
+@media screen and (max-width: 767px) {
     .column {
         width: 100%;
     }
 }
-
-/* container and styling for individual projects */
-.projectContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #222233;
-    border-style: solid;
-    border-color: #222233;
-    border-width: 2px;
-    border-radius: 15px;
-    height: auto;
-    width: auto;
-    padding: 15px;
-    margin-bottom: 10px;
-}
+    /* Styling for individual projects */
 .projectTitle {
     font-size: 20px;
     padding-bottom: 10px;
 }
 .projectSummary {
     font-size: 15px;
+    padding-bottom: 10px;
 }
 #myVideo {
     width: 100%;
-    height: 400px;
+    height: auto;
     border: solid black 2px;
     border-radius: 10px;
     margin-bottom: 35px;

@@ -14,43 +14,43 @@ body{
     font-family: 'CustomFont', raleway-regular; /* Use the font family */
 }
 a {
+    color: #00b6bc;
     text-decoration: none;
 }
 
 /* Text styling */
 .highlight{
     color: #df265e;
-    }
+}
 
 /* Navbar and navbar links styling */
 #navbar {
-    position: fixed;
-    top: 0;
     z-index: 9999;
-    width: 100%;
+    overflow: hidden;
     background-color:#222233;
     border-bottom: solid 5px #00b6bc;
+}
+ul{
+    list-style-type: none;
 }
 #navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 15px;
-    padding-left: 30px;
+    padding: 10px;
+    padding-left: 20px;
     text-decoration: none;
     font-size: 15px;
 } 
 #navbar a:hover {
     color: #00b6bc;
 }
-ul{
-    list-style-type: none;
-}
 
 
 
-/* MORE OF MY WORK SECTION */
+
+/****** MORE OF MY WORK SECTION ******/
 #morework{
     height: auto; 
     padding-top: 50px;
@@ -70,32 +70,13 @@ ul{
     flex: 50%;
     padding: 20px;
 }
-
-  /* On screens that are 767px wide or less: ipad, go from two columns to one columns */
-@media screen and (max-width: 828px) {
+  /* On screens that are 767px wide or less, go from two columns to one column */
+@media screen and (max-width: 767px) {
     .column {
         width: 100%;
     }
 }
-
-
-/* container and styling for individual projects */
-.projectContainer {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    align-items: center;
-    text-align: center;
-    color: #222233;
-    border-style: solid;
-    border-color: #222233;
-    border-width: 2px;
-    border-radius: 10px;
-    height: auto;
-    width: auto;
-    padding: 15px; 
-    margin: 20px;
-}
+/* Styling for individual projects */
 .projectTitle {
     font-size: 20px;
     padding-bottom: 10px;
@@ -106,7 +87,7 @@ ul{
 }
 #myVideo {
     width: 100%;
-    height: 400px;
+    height: auto;
     border: solid black 2px;
     border-radius: 10px;
     margin-bottom: 35px;
@@ -138,6 +119,23 @@ ul{
 }
 .externalLink a:hover{
     color: #00b6bc;
+}
+/* container and styling for individual projects */
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #222233;
+    border-style: solid;
+    border-color: #222233;
+    border-width: 2px;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    padding: 15px; 
+    margin: 20px;
 }
 
 /* Footer  */
