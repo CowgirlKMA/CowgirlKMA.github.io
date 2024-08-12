@@ -63,14 +63,7 @@ ul{
     top: 0;
     width: 100%;
 }
-/* When the screen is less than 480 pixels wide: phone, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
-/* @media screen and (max-width: 480px) {
-    .myNavbar a:not(:first-child) {display: none;}
-    .myNavbar a.icon {
-        float: right;
-        display: block;
-    }
-} */
+
 /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
 /* @media screen and (max-width: 480px) {
     .myNavbar.responsive {position: relative;}
@@ -120,6 +113,7 @@ ul{
 /****** ABOUT SECTION ******/
 #about{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 7%;
     padding-bottom: 5%;
@@ -128,15 +122,10 @@ ul{
     border-bottom: solid 5px  #00b6bc; 
 }
 /* Create two equal columns containing text and slideshow side by side */
-/* .aboutRow {
-    display: flex;
-    padding-top: 50px;
-    justify-content: space-evenly;
-    align-content: center;
-}
-.aboutColumn1 .aboutColumn2{
+/* .container{
     flex: 50%;
 } */
+
 .text {
     padding: 10px;
     align-content: center;
@@ -212,13 +201,23 @@ ul{
     from {opacity: .4}
     to {opacity: 1}
 }
+/* Container for flexboxes */
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+} */
+  /* Create two equal columns */
+/* .column {
+    flex: 50%;
+    padding: 20px;
+} */
 
 /* Responsive layout - when the screen is less than 480px wide: phone, make the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .aboutColumn1 .aboutColumn2 {
         width: 100%;
     }
-} */
+}
 
 
 /****** MY WORK SECTION ******/
@@ -230,23 +229,34 @@ ul{
     font-weight: bold;
     font-size: 30px;
 }
-/* Container for all projects */
-/* Container for flexboxes */
-.row {
+#column1 #column2{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
-  /* Create two equal columns */
-.column {
-    flex: 50%;
-    padding: 20px;
+/* container and styling for individual projects */
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: left;
+    /* text-align: center;
+    color: #222233;
+    border-style: solid;
+    border-color: #222233;
+    border-width: 2px;
+    border-radius: 10px; */
+    height: auto;
+    width: auto;
+    padding: 15px; 
+    margin: 20px;
 }
+
   /* On screens that are 767px wide or less, go from two columns to one columns */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .column {
         width: 100%;
     }
-}
+} */
     /* Styling for individual projects */
 .projectTitle {
     font-size: 20px;
