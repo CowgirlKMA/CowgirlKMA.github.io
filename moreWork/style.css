@@ -59,7 +59,9 @@ ul{
 /* Container for flexboxes */
 .row {
     display: flex;
-    flex-wrap: wrap;
+    border-width: auto;
+    align-items: baseline;
+    /* flex-wrap: wrap; */
 }
 /* Create two equal columns */
 .column {
