@@ -64,22 +64,6 @@ ul{
     width: 100%;
 }
 
-/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
-/* @media screen and (max-width: 480px) {
-    .myNavbar.responsive {position: relative;}
-    .myNavbar.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .myNavbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-} */
-
-
 
 /* Main sections */
 /****** HOME SECTION ******/
@@ -121,11 +105,6 @@ ul{
     background-color: #ebeff3; 
     border-bottom: solid 5px  #00b6bc; 
 }
-/* Create two equal columns containing text and slideshow side by side */
-/* .container{
-    flex: 50%;
-} */
-
 .text {
     padding: 10px;
     align-content: center;
@@ -201,16 +180,6 @@ ul{
     from {opacity: .4}
     to {opacity: 1}
 }
-/* Container for flexboxes */
-/* .row {
-    display: flex;
-    flex-wrap: wrap;
-} */
-  /* Create two equal columns */
-/* .column {
-    flex: 50%;
-    padding: 20px;
-} */
 
 /* Responsive layout - when the screen is less than 480px wide: phone, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 480px) {
@@ -250,14 +219,6 @@ ul{
     padding: 15px; 
     margin: 20px;
 }
-
-  /* On screens that are 767px wide or less, go from two columns to one columns */
-/* @media screen and (max-width: 767px) {
-    .column {
-        width: 100%;
-    }
-} */
-    /* Styling for individual projects */
 .projectTitle {
     font-size: 20px;
     padding-bottom: 10px;
@@ -277,16 +238,16 @@ ul{
 /* Links to other pages */
 .links{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-
 .viewMoreWorkBtn{
     background-color: #2c2c3d;
     border: solid  #222233; 
     color: #f2f2f2;
     padding-left: 20px;
-    margin-left: 40px;
-    margin-bottom: 35px;
+    margin-top: 25px;
     border-radius: 10px;
     transition: 0.3s;
     font-size: 20px;
@@ -300,8 +261,8 @@ ul{
     border: solid  #222233; 
     color: #f2f2f2;
     padding-left: 20px;
-    margin-right: 40px;
-    margin-bottom: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 10px;
     transition: 0.3s;
     font-size: 20px;

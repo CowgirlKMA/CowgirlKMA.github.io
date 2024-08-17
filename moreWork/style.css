@@ -127,13 +127,13 @@ ul{
 }
 .eachProject {
     font-size: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 /* Resume link */
 .links{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .resumeLink{
     background-color: #2c2c3d;
