@@ -44,21 +44,14 @@ ul{
 .myNavbar a:hover {
     color: #00b6bc
 }
-/* #navbar a.active {
-    background-color: #222233;
-    color: #00b6bc;
-} */
-/* Hide the link that should open and close the navbar on small screens */
-/* .myNavbar .icon {
-    display: none;
-    } */
-    /* Psuedo selector for when it's not sticky */
-    /* #navbar:not(.sticky){
-        position: absolute;
-        bottom: 0px;
-        } */
-        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-        .sticky {
+/* Psuedo selector for when it's not sticky */
+#navbar:not(.sticky){
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    }
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
@@ -67,16 +60,23 @@ ul{
 
 /* Main sections */
 /****** HOME SECTION ******/
+.backVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 .introduction{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     height: 590px; 
-    background-color:#2c2c3d;
+    /* background-color:#2c2c3d; */
     border-bottom: solid 5px  #00b6bc;
     color: #f2f2f2;
     font-size: 45px;
+    font-weight: bold;
 }
 .viewMyWorkBtn{
     background-color:#2c2c3d;
@@ -244,7 +244,7 @@ ul{
 }
 .viewMoreWorkBtn{
     background-color: #2c2c3d;
-    border: solid  #222233; 
+    border: solid  #00b6bc; 
     color: #f2f2f2;
     padding-left: 20px;
     margin-top: 25px;
@@ -254,11 +254,12 @@ ul{
 }
 .viewMoreWorkBtn:hover {
     background-color: #00b6bc;
+    border: solid #2c2c3d;
     color: #f2f2f2;
 }
 .resumeLink{
     background-color: #2c2c3d;
-    border: solid  #222233; 
+    border: solid  #00b6bc; 
     color: #f2f2f2;
     padding-left: 20px;
     margin-top: 25px;
@@ -269,6 +270,7 @@ ul{
 }
 .resumeLink:hover {
     background-color: #00b6bc;
+    border: solid #2c2c3d;
     color: #f2f2f2;
 }
 
