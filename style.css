@@ -109,7 +109,7 @@ ul{
     text-align: center;
     max-width: 525px;
     min-width: 350px;
-    height: 440px;
+    height: auto;
     border: solid #222233 3px;
     border-radius: 10px;
 }
